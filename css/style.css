@@ -23,23 +23,23 @@ section{
     border: solid white 1px;
     color: white;
 }
-
+/* row 1 */
 .section-1 .col-1{
     display: flex;
     flex-basis: calc(100% / 12);
 }
-
+/* row 2 */
 .section-1 .col-2{
     flex-basis: calc((100% / 12) * 5 );
 }
 .section-1 .col-2:first-child {
     flex-basis: calc((100% / 12) * 2);
 }
-
+/* row 3 */
 .section-1 .col-3{
     flex-basis: 100%;
 }
-
+/* row 4 */
 .section-1 .col-4 {
     flex-basis: calc((100% / 12) * 2);
 }
@@ -47,3 +47,44 @@ section{
     flex-basis: calc((100% / 12) * 8);
 }
 
+/* row 5 */
+.section-1 .col-5 {
+    flex-basis: calc((100% / 12) * 2);
+}
+.section-1 .col-5:first-child,
+.col-5:last-child
+ {
+    flex-basis: calc(100% / 12);
+}
+.section-1 .col-5:nth-child(4){
+    flex-basis: calc((100% / 12) * 6);
+}
+
+/* row 6 */
+.col-6{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.section-1 .col-6 {
+    flex-basis: calc((100% / 12) * 6);
+}
+
+.nest-col{
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    border: solid blue 1px;
+}
+
+.col-6 .nest-col-left{
+    flex-basis: calc((100% / 12) * 2);
+}
+.col-6 .nest-col-left:last-child {
+    flex-basis: calc((100% / 12) * 8);
+}
+.col-6 .nest-col-right {
+    flex-basis: calc((100% / 12) * 6);
+}
