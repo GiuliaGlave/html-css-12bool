@@ -3,6 +3,8 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	font-size: large;
+	font-weight: bold;
 }
 
 .clearfix::after {
